@@ -115,3 +115,23 @@ It is all inside this folder, nothing was installed system-wide:
 Note: `sdkmanager` itself can't write to `C:\Users\MM\.android` in this sandbox, so the SDK packages
 were downloaded directly from Google's repository index instead. That only matters if you need more
 SDK packages later.
+
+## Credit
+
+Nearly everything in this repository is other people's work, used under the MIT licence. None of it is
+mine, and none of it should be judged by the state of this copy.
+
+| Who | What |
+|---|---|
+| **[Gathin (@Gathin23)](https://github.com/Gathin23)** — [CleanYourTV](https://github.com/Gathin23/cleanyourtv) · https://cleanyour.tv | The whole project: `tools/tv.py` (the pure-Python ADB client), `disable` / `restore` / `check` and their Home, TV-input and handler guards, `recovery.py` and the restore record, the launcher in `launcher/`, `PROMPT.md` and the safety rules in it, and the documentation. MIT licence, Copyright © 2026 Gathin. |
+| **[@steepenergy](https://github.com/steepenergy)** | The `examples/xiaomi-mitv-ayfr0/` debloat list this TV used — the package names, and the notes in its header about this exact stick (no tuner, the HOME claimants, the remote's Home key, CEC One Touch Play). |
+| **CleanYourTV's contributors** | The 170+ TV lists and 433 tested models, the themes, the device notes and the troubleshooting entries that made this a fifteen-minute job instead of an afternoon of guesswork. |
+
+**My contribution to this copy is only** the per-TV `launcher/.../config.xml` (dock = YouTube and
+Jellyfin, `fill_dock` off, no Live TV package), the notes and screenshots in this file, and running the
+sequence on the device.
+
+If you came here looking for the tool rather than for this TV's settings, go upstream:
+**[github.com/Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv)**. If the MiTV-AYFR0 list
+helped you, the useful contribution is a list for *your* model there, not a change to this copy. See
+[CONTRIBUTING.md](CONTRIBUTING.md).

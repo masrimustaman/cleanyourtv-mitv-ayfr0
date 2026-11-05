@@ -1,3 +1,13 @@
+> **This is a personal copy of [CleanYourTV](https://github.com/Gathin23/cleanyourtv), not the original
+> project.** Every tool, script, the launcher, the debloat lists and the documentation below were written
+> by [Gathin (@Gathin23)](https://github.com/Gathin23) and the CleanYourTV contributors, under the MIT
+> licence (Copyright © 2026 Gathin). Please use, star and report bugs against the upstream repository:
+> **https://github.com/Gathin23/cleanyourtv** · https://cleanyour.tv
+>
+> This copy exists only to record the setup of one TV — a Xiaomi Mi TV Stick 4K (MiTV-AYFR0) — and the
+> only change in it is that TV's `launcher/app/src/main/res/values/config.xml`. The story, the undo path
+> and the credits are in [RESTORE-THE-TV.md](RESTORE-THE-TV.md).
+
 <p align="center">
   <a href="https://cleanyour.tv"><img src="https://raw.githubusercontent.com/Gathin23/cleanyourtv/main/docs/banner.png" alt="CleanYourTV. Your TV, minus the ads. Strip the bloatware from any Android TV or Google TV over Wi-Fi and replace the ad-filled home screen with a clean launcher that looks like an Apple TV. No root, no cable, nothing uninstalled, and a one-line restore." width="800"></a>
 </p>
