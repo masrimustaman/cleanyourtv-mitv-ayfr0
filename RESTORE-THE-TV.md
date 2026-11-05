@@ -42,10 +42,10 @@ before we started; they were left exactly as they were.
 
 The restore state was recorded before the first change and is stored in two places:
 
-- `C:\Users\MM\.cleanyourtv\recovery-<tv ip>-6fb5b3ba.json`
+- `C:\Users\<you>\.cleanyourtv\recovery-<tv ip>-<hash>.json`
 - `backup\recovery-<tv ip>-6fb5b3ba.json` (inside the repo copy)
 
-Turn network debugging on again on the TV, then from `C:\Users\MM\Documents\deepseek-harness\default-workspace\cytt`:
+Turn network debugging on again on the TV, then from the root of this repository:
 
 ```powershell
 $env:TV_HOST = '<tv ip>'
@@ -112,9 +112,14 @@ It is all inside this folder, nothing was installed system-wide:
 - `work\gradle` — Gradle cache
 - `work\android-home` — Android's user dir (debug keystore lives here)
 
-Note: `sdkmanager` itself can't write to `C:\Users\MM\.android` in this sandbox, so the SDK packages
+Note: `sdkmanager` itself can't write to `C:\Users\<you>\.android` in this sandbox, so the SDK packages
 were downloaded directly from Google's repository index instead. That only matters if you need more
 SDK packages later.
+
+Everything that went wrong while setting this up — the sandbox write denials, the broken schannel TLS,
+the venv and pip failures, the Gradle signing and AGP environment errors, the `tv.py` hangs, and the
+dead end that the Google Photos ambient picker turned out to be — is written up, with the exact fixes,
+in [`docs/windows-setup-notes.md`](docs/windows-setup-notes.md).
 
 ## Credit
 
