@@ -121,6 +121,9 @@ the venv and pip failures, the Gradle signing and AGP environment errors, the `t
 dead end that the Google Photos ambient picker turned out to be — is written up, with the exact fixes,
 in [`docs/windows-setup-notes.md`](docs/windows-setup-notes.md).
 
+The session itself, start to finish, with what was tried and when, is in
+[`docs/activity-2026-11-05.md`](docs/activity-2026-11-05.md).
+
 ## Credit
 
 Nearly everything in this repository is other people's work, used under the MIT licence. None of it is
